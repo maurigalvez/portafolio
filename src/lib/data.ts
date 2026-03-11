@@ -85,4 +85,22 @@ export const projects: Project[] = [
     liveUrl: "https://store.steampowered.com/app/905360/Smash_Ball/",
     company: "Gamepill / VRGEN",
   },
+  {
+    title: "Mayan Stacker",
+    description:
+      "A stacking game inspired by Mayan ruins across Central America. Players learn about real archeological sites while enjoying the gameplay.",
+    techStack: ["Unity", "C#", "Android"],
+    image: "/MayanStacker.png",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.torogozgames.mayanstacker",
+    company: "Personal Project",
+  },
+  {
+    title: "TorogozLingua",
+    description:
+      "A language learning app supporting 20+ languages with vocabulary building from podcasts and image scanning features.",
+    techStack: ["Flutter", "Dart", "Android"],
+    image: "/Torogoz_Lingua.png",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.torogozgames.language_learning_app&hl=en_CA",
+    company: "Personal Project",
+  },
 ];
