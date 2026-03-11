@@ -19,7 +19,7 @@ export const siteConfig = {
   title: "Senior Software Engineer",
   bio: "With 10+ years of experience designing and building games and interactive systems, I specialize in multiplayer networking, client-server architectures, AWS cloud integration, and performance optimization. I've contributed to multiple commercially shipped titles across PC, PlayStation, VR, and Mobile platforms, while also mentoring teams and fostering technical excellence.",
   bio2: "Passionate about solving complex challenges, I thrive at the intersection of scalable systems, real-time gameplay, and team leadership\u2014bringing both technical depth and collaborative spirit to every project.",
-  email: "john@example.com",
+  email: "mauri.galvez91@gmail.com",
   profileImage: "/profile.jpg",
 };
 
@@ -37,9 +37,9 @@ export const techStack = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: "GitHub", url: "https://github.com", icon: "github" },
-  { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-  { name: "Instagram", url: "https://instagram.com", icon: "instagram" },
+  { name: "GitHub", url: "https://github.com/maurigalvez/", icon: "github" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/magalvez/", icon: "linkedin" },
+  { name: "Instagram", url: "https://www.instagram.com/maurimgalvez/", icon: "instagram" },
 ];
 
 export const navLinks = [
