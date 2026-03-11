@@ -91,7 +91,7 @@ export const projects: Project[] = [
       "A stacking game inspired by Mayan ruins across Central America. Players learn about real archeological sites while enjoying the gameplay.",
     techStack: ["Unity", "C#", "Android"],
     image: "/MayanStacker.png",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.torogozgames.mayanstacker",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.TorogozGames.MayanStacker&pcampaignid=web_share",
     company: "Personal Project",
   },
   {
