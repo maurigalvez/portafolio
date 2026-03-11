@@ -53,7 +53,7 @@ export const projects: Project[] = [
     title: "Vegas Infinite",
     description:
       "Leading production of new slot games targeting Android, iOS, Quest, and Steam. Built server and client slot systems and implemented third-party slot integration.",
-    techStack: ["Unity", "C#", "JavaScript", "AWS"],
+    techStack: ["Unity", "C#", "JavaScript", "AWS", "Photon PUN", "Photon Server"],
     image: "/vegasinfinite.jpg",
     liveUrl: "https://www.vegasinfinite.com/",
     company: "Lucky Logic",
