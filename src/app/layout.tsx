@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe | Software Engineer",
+  title: "Mauricio Galvez | Senior Software Engineer",
   description:
-    "Personal portfolio of John Doe - Software Engineer specializing in modern web and mobile applications.",
+    "Personal portfolio of Mauricio Galvez - Senior Software Engineer specializing in multiplayer systems, cloud, and game development.",
 };
 
 export default function RootLayout({

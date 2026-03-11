@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { siteConfig, techStack } from "@/lib/data";
-import { User } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 export default function HeroSection() {
@@ -12,8 +12,15 @@ export default function HeroSection() {
     >
       <AnimatedSection className="max-w-4xl mx-auto text-center">
         <div className="mb-8 flex justify-center">
-          <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center shadow-lg">
-            <User size={64} className="text-white" />
+          <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-blue-400/30">
+            <Image
+              src={siteConfig.profileImage}
+              alt={siteConfig.name}
+              width={160}
+              height={160}
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
         </div>
 
@@ -25,8 +32,12 @@ export default function HeroSection() {
           {siteConfig.title}
         </p>
 
-        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed">
           {siteConfig.bio}
+        </p>
+
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+          {siteConfig.bio2}
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">

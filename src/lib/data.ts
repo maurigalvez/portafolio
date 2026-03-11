@@ -2,8 +2,10 @@ export interface Project {
   title: string;
   description: string;
   techStack: string[];
-  liveUrl: string;
-  githubUrl: string;
+  image: string;
+  liveUrl?: string;
+  githubUrl?: string;
+  company: string;
 }
 
 export interface SocialLink {
@@ -13,20 +15,25 @@ export interface SocialLink {
 }
 
 export const siteConfig = {
-  name: "John Doe",
-  title: "Software Engineer",
-  bio: "Passionate software engineer with experience building modern web and mobile applications. I love turning ideas into elegant, performant solutions that make a difference.",
+  name: "Mauricio Galvez",
+  title: "Senior Software Engineer",
+  bio: "With 10+ years of experience designing and building games and interactive systems, I specialize in multiplayer networking, client-server architectures, AWS cloud integration, and performance optimization. I've contributed to multiple commercially shipped titles across PC, PlayStation, VR, and Mobile platforms, while also mentoring teams and fostering technical excellence.",
+  bio2: "Passionate about solving complex challenges, I thrive at the intersection of scalable systems, real-time gameplay, and team leadership\u2014bringing both technical depth and collaborative spirit to every project.",
   email: "john@example.com",
   profileImage: "/profile.jpg",
 };
 
 export const techStack = [
+  "Unity",
+  "C#",
+  "AWS",
+  "TypeScript",
   "React",
   "Next.js",
-  "TypeScript",
-  "Unity",
   "Flutter",
   "Firebase",
+  "Multiplayer",
+  "VR",
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -43,27 +50,39 @@ export const navLinks = [
 
 export const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
+    title: "Vegas Infinite",
     description:
-      "A full-stack e-commerce solution with real-time inventory, payment processing, and an admin dashboard.",
-    techStack: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "Leading production of new slot games targeting Android, iOS, Quest, and Steam. Built server and client slot systems and implemented third-party slot integration.",
+    techStack: ["Unity", "C#", "JavaScript", "AWS"],
+    image: "/vegasinfinite.jpg",
+    liveUrl: "https://www.vegasinfinite.com/",
+    company: "Lucky Logic",
   },
   {
-    title: "Task Management App",
+    title: "Mech League: Boxing",
     description:
-      "A collaborative task manager with drag-and-drop boards, real-time updates, and team workspaces.",
-    techStack: ["React", "Firebase", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A VR game where you pilot a robot suit and battle other fighters. Developed player mechanics, fighter AI, and VR UI interaction.",
+    techStack: ["Unity", "C#", "VR", "AI"],
+    image: "/mechleague_boxing.jpg",
+    liveUrl: "https://store.steampowered.com/app/609010/Mech_League_Boxing/",
+    company: "Gamepill / VRGEN",
   },
   {
-    title: "Fitness Tracker",
+    title: "Mech League: Hunting",
     description:
-      "A cross-platform mobile app for tracking workouts, nutrition, and health metrics with data visualization.",
-    techStack: ["Flutter", "Dart", "Firebase", "Charts"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A couch co-op FPS with VR support. Implemented multiple weapon types, enemy AI including bosses, and cross-platform input.",
+    techStack: ["Unity", "C#", "VR", "Multiplayer"],
+    image: "/mechleague_hunting.jpg",
+    liveUrl: "https://store.steampowered.com/app/806230/Mech_League_Hunting/",
+    company: "Gamepill / VRGEN",
+  },
+  {
+    title: "Mech League: Smash Ball",
+    description:
+      "Led development as lead developer, managing tasks and implementing core game mechanics, UI, and Photon Bolt multiplayer networking.",
+    techStack: ["Unity", "C#", "Photon Bolt", "Multiplayer"],
+    image: "/mechleague_smashball.jpg",
+    liveUrl: "https://store.steampowered.com/app/905360/Smash_Ball/",
+    company: "Gamepill / VRGEN",
   },
 ];
