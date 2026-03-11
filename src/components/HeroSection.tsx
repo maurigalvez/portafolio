@@ -3,14 +3,16 @@
 import Image from "next/image";
 import { siteConfig, techStack } from "@/lib/data";
 import AnimatedSection from "./AnimatedSection";
+import ParticleBackground from "./ParticleBackground";
 
 export default function HeroSection() {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center px-4 pt-16"
+      className="relative min-h-screen flex items-center justify-center px-4 pt-16"
     >
-      <AnimatedSection className="max-w-4xl mx-auto text-center">
+      <ParticleBackground />
+      <AnimatedSection className="relative z-10 max-w-4xl mx-auto text-center">
         <div className="mb-8 flex justify-center">
           <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-blue-400/30">
             <Image

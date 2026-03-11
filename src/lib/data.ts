@@ -8,6 +8,13 @@ export interface Project {
   company: string;
 }
 
+export interface Experience {
+  title: string;
+  company: string;
+  period: string;
+  highlights: string[];
+}
+
 export interface SocialLink {
   name: string;
   url: string;
@@ -45,7 +52,46 @@ export const socialLinks: SocialLink[] = [
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
+];
+
+export const experiences: Experience[] = [
+  {
+    title: "Lead Software Engineer / Software Engineer",
+    company: "Lucky VR",
+    period: "Feb 2019 – Present",
+    highlights: [
+      "Lead engineer for slots and sports betting in crossplay title Vegas Infinite",
+      "Manage task assignments, sprint planning, and mentoring of team",
+      "Integrated backend and client for slot games on Android, iOS, Oculus, and Steam",
+      "Implemented client-server features with Photon Server Plugin",
+      "Architected networking logic using Photon PUN",
+      "Built AWS-based cloud systems supporting real-time and persistent data storage",
+    ],
+  },
+  {
+    title: "VR Developer",
+    company: "VRGEN",
+    period: "Apr 2016 – Jan 2019",
+    highlights: [
+      "Led development of gameplay systems, AI, and UI across multiple VR titles",
+      "Experience with Photon: Bolt and UNET for networking",
+      "Steamworks integration",
+      "Implemented CG shaders",
+      "Shipped VR titles: Mech League: Boxing, Hunting, and Smash",
+    ],
+  },
+  {
+    title: "VR Developer",
+    company: "Sulon Technologies",
+    period: "Aug 2015 – Mar 2016",
+    highlights: [
+      "Developed demo applications for Sulon mixed reality headset",
+      "Created procedural mesh manipulation tools",
+      "Worked with internal and external SDKs (Oculus, ARToolkit)",
+    ],
+  },
 ];
 
 export const projects: Project[] = [
