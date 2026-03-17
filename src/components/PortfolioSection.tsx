@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { projects } from "@/lib/data";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Youtube } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 export default function PortfolioSection() {
@@ -63,6 +63,17 @@ export default function PortfolioSection() {
                       >
                         <ExternalLink size={16} />
                         Live Site
+                      </a>
+                    )}
+                    {project.trailerUrl && (
+                      <a
+                        href={project.trailerUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors"
+                      >
+                        <Youtube size={16} />
+                        Trailer
                       </a>
                     )}
                     {project.githubUrl && (

@@ -5,6 +5,7 @@ export interface Project {
   image: string;
   liveUrl?: string;
   githubUrl?: string;
+  trailerUrl?: string;
   company: string;
 }
 
@@ -96,6 +97,26 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    title: "Mayan Stacker",
+    description:
+      "A stacking game inspired by Mayan ruins across Central America. Players learn about real archeological sites while enjoying the gameplay.",
+    techStack: ["Unity", "C#", "Android"],
+    image: "/MayanStacker.png",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.TorogozGames.MayanStacker&pcampaignid=web_share",
+    trailerUrl: "https://youtube.com/shorts/MvEs46Sn8NE?si=fiN0TRwdnbUshQnx",
+    company: "Personal Project",
+  },
+  {
+    title: "TorogozLingua",
+    description:
+      "A language learning app supporting 20+ languages with vocabulary building from podcasts and image scanning features.",
+    techStack: ["Flutter", "Dart", "Android"],
+    image: "/Torogoz_Lingua.png",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.torogozgames.language_learning_app&hl=en_CA",
+    trailerUrl: "https://www.youtube.com/shorts/y1s0ex_cInQ",
+    company: "Personal Project",
+  },
+  {
     title: "Vegas Infinite",
     description:
       "Leading production of new slot games targeting Android, iOS, Quest, and Steam. Built server and client slot systems and implemented third-party slot integration.",
@@ -130,23 +151,5 @@ export const projects: Project[] = [
     image: "/mechleague_smashball.jpg",
     liveUrl: "https://store.steampowered.com/app/905360/Smash_Ball/",
     company: "Gamepill / VRGEN",
-  },
-  {
-    title: "Mayan Stacker",
-    description:
-      "A stacking game inspired by Mayan ruins across Central America. Players learn about real archeological sites while enjoying the gameplay.",
-    techStack: ["Unity", "C#", "Android"],
-    image: "/MayanStacker.png",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.TorogozGames.MayanStacker&pcampaignid=web_share",
-    company: "Personal Project",
-  },
-  {
-    title: "TorogozLingua",
-    description:
-      "A language learning app supporting 20+ languages with vocabulary building from podcasts and image scanning features.",
-    techStack: ["Flutter", "Dart", "Android"],
-    image: "/Torogoz_Lingua.png",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.torogozgames.language_learning_app&hl=en_CA",
-    company: "Personal Project",
   },
 ];
