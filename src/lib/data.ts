@@ -97,6 +97,24 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    title: "DepthRush",
+    description:
+      "An underwater cave diving adventure built for TOJam 2026. Race against an avalanche and depleting oxygen to recover artifacts, strategically dropping items to pass through weight-restricted gates.",
+    techStack: ["Unity", "C#", "WebGL"],
+    image: "/depthrush.png",
+    liveUrl: "https://torogozgames.itch.io/depthrush",
+    company: "Game Jam",
+  },
+  {
+    title: "Splitsies",
+    description:
+      "A mobile tool for splitting shared expenses with friends. Create groups via invite codes and split costs equally, by percentage, or custom amounts with automatic balance calculations.",
+    techStack: ["Flutter", "Dart", "Android"],
+    image: "/splitsies.png",
+    liveUrl: "https://torogozgames.itch.io/splitsies",
+    company: "Personal Project",
+  },
+  {
     title: "Mayan Stacker",
     description:
       "A stacking game inspired by Mayan ruins across Central America. Players learn about real archeological sites while enjoying the gameplay.",
