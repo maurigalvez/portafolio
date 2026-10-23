@@ -7,6 +7,7 @@ export interface Project {
   githubUrl?: string;
   trailerUrl?: string;
   company: string;
+  comingSoon?: boolean;
 }
 
 export interface Experience {
@@ -97,22 +98,13 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    title: "DepthRush",
+    title: "Rootpace",
     description:
-      "An underwater cave diving adventure built for TOJam 2026. Race against an avalanche and depleting oxygen to recover artifacts, strategically dropping items to pass through weight-restricted gates.",
-    techStack: ["Unity", "C#", "WebGL"],
-    image: "/depthrush.png",
-    liveUrl: "https://torogozgames.itch.io/depthrush",
-    company: "Game Jam",
-  },
-  {
-    title: "Splitsies",
-    description:
-      "A mobile tool for splitting shared expenses with friends. Create groups via invite codes and split costs equally, by percentage, or custom amounts with automatic balance calculations.",
-    techStack: ["Flutter", "Dart", "Android"],
-    image: "/splitsies.png",
-    liveUrl: "https://torogozgames.itch.io/splitsies",
+      "Rootpace is a calm, passive idle game where the only resource that matters is you. Steps, sleep, and active minutes from your day become Dew, Seeds of Light, and Essence: the fuel your garden needs to bloom.",
+    techStack: [],
+    image: "/rootpace.png",
     company: "Personal Project",
+    comingSoon: true,
   },
   {
     title: "Mayan Stacker",
@@ -122,16 +114,6 @@ export const projects: Project[] = [
     image: "/MayanStacker.png",
     liveUrl: "https://play.google.com/store/apps/details?id=com.TorogozGames.MayanStacker&pcampaignid=web_share",
     trailerUrl: "https://youtube.com/shorts/MvEs46Sn8NE?si=fiN0TRwdnbUshQnx",
-    company: "Personal Project",
-  },
-  {
-    title: "TorogozLingua",
-    description:
-      "A language learning app supporting 20+ languages with vocabulary building from podcasts and image scanning features.",
-    techStack: ["Flutter", "Dart", "Android"],
-    image: "/Torogoz_Lingua.png",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.torogozgames.language_learning_app&hl=en_CA",
-    trailerUrl: "https://www.youtube.com/shorts/y1s0ex_cInQ",
     company: "Personal Project",
   },
   {

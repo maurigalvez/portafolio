@@ -19,13 +19,24 @@ export default function PortfolioSection() {
           {projects.map((project) => (
             <AnimatedSection key={project.title}>
               <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
-                <div className="relative w-full h-48">
+                <div
+                  className={`relative w-full h-48 ${project.comingSoon ? "bg-[#8ccbeb]" : ""}`}
+                >
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className={
+                      project.comingSoon
+                        ? "object-contain [image-rendering:pixelated]"
+                        : "object-cover"
+                    }
                   />
+                  {project.comingSoon && (
+                    <span className="absolute top-3 right-3 text-xs font-semibold text-white bg-gray-900/70 px-3 py-1 rounded-full">
+                      Coming Soon
+                    </span>
+                  )}
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
